@@ -71,10 +71,6 @@ ul {
 	width: 260px;
 }
 
-.site-currency-info-item {
-	/*margin-right: 15px;*/
-}
-
 .currency-symbol {
 	font-weight: bold;
 	font-size: 16px;
@@ -178,7 +174,6 @@ ul {
 	margin-right: 5px;
 }
 
-
 /*site-nav*/
 
 .site-header-nav {
@@ -234,14 +229,102 @@ ul {
 	width: 100%;
 	padding: 0;
 	margin-top: 20px;
-	border: 1px solid #E0E0E0;
 }
 
 .site-header-ads-link {
+	height: 100%;
 	width: 100%;
 }
 
 .site-header-ads-link img {
 	display: block;
 	width: 100%;
+	height: 100%;
+	object-position: cover;
+	border: 1px solid #E0E0E0;
+}
+
+
+/*corono-section*/
+
+
+.corono-info {
+	width: 100%;
+	background: #F6F6F9;
+	border-radius: 5px;
+	margin-top: 18px;
+}
+
+.corono-info-list {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	justify-content: space-between;
+	padding: 40px 0;
+	padding-left: 35px;
+	padding-right: 80px;
+}
+
+.corono-info-item {
+	display: flex;
+	align-items: center;
+}
+
+.corono-info-item::before {
+	content: "";
+	display: block;
+	width: 2px;
+	margin-right: 28px;
+}
+
+.corono-heading::before {
+	display: none;
+}
+
+.corono-effected::before {
+	background-color: red;
+	height: 65px;
+}
+
+.corono-cured::before,
+.corono-dead::before {
+	background-color: #F4CCD1;
+	height: 45px;
+}
+
+.corono-info-img {
+	display: block;
+	margin-right: 22px;
+}
+
+.corono-item-text-side {
+	display: flex;
+	flex-direction: column;
+}
+
+.corono-state-text {
+	font-size: 18px;
+	line-height: 21px;
+}
+.corono-heading .corono-item-text-side{
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	width: 230px;
+}
+
+.corono-effected .corono-state-text  {
+	color: #DB0000;;
+}
+.corono-cured .corono-state-text  {
+	color: #05B135;;
+}
+.corono-dead .corono-state-text  {
+	color: black;;
+}
+
+.corono-info-numbers {
+	font-weight: 500;
+	font-size: 25px;
+	line-height: 30px;
 }
