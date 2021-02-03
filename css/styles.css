@@ -430,3 +430,139 @@ ul {
 .notification-button:hover {
 	background: linear-gradient(90deg, rgba(255, 139, 54, 0.9) 0%, #FE5C28 88.43%);
 }
+
+
+
+/*main-news*/
+
+.main-news-section {
+	display: flex;
+	width: 100%;
+	margin-bottom: 100px;
+}
+
+.last-news {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	width: 68%;
+}
+.heading {
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 24px;
+	margin: 0;
+	margin-bottom: 10px;
+}
+.last-news-item {
+	margin-bottom: 20px;
+}
+
+.last-news-item a {
+	display: flex;
+	align-items: center;
+}
+
+.last-news-item img {
+	display: block;
+	object-fit: cover;
+	border-radius: 5px;
+}
+
+.last-news-item .last-news-item-text-side {
+	padding-left: 20px;
+	padding-right: 35px;
+}
+
+.last-news-item-text-side h4 {
+	font-weight: 500;
+	font-size: 17px;
+	line-height: 20px;
+	color: black;
+	margin: 0;
+}
+
+.last-news-item-text-side p {
+	font-size: 15px;
+	line-height: 18px;
+	color: #434343;
+	margin-bottom: 8px;
+	margin-top: 8px;
+}
+
+.last-news-item-text-side time {
+	display: inline-flex;
+	align-items: center;
+	font-size: 14px;
+	line-height: 17px;
+	color: #7688A4;
+}
+
+.last-news-item-text-side time::before {
+	content: "";
+	display: inline-block;
+	background-image: url('../img/calendar.svg');
+	background-position: center;
+	background-size: cover;
+	width: 19px;
+	height: 19px;
+	margin-right: 2px;
+}
+
+.last-news-button {
+	background: none;
+	border: none;
+	outline: none;
+	margin-left: auto;
+	margin-right: auto;
+	font-weight: 500;
+	font-size: 17px;
+	color: #FFFFFF;
+	background-color: #295093;
+	border-radius: 5px;
+	padding: 12px 32px;
+}
+
+
+
+/*popular-news*/
+
+.popular-news {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 32%;
+}
+
+.popular-news-wrapper {
+	background-color: #F6F6F9;
+	border-radius: 5px;
+	padding: 25px;
+}
+
+.popular-news-item a {
+	display: inline-block;
+}
+.popular-news-item {
+	border-bottom: 4px solid #E4E4E4;;
+	padding-bottom: 15px;
+	padding-top: 15px;
+}
+
+.popular-news-item:last-child {
+	border: none;
+	padding-bottom: 0;
+}
+.popular-news-item p {
+	font-size: 17px;
+	line-height: 20px;
+	color: #202020;
+	margin: 0;
+	margin-bottom: 12px;
+}
+
+.popular-news-item time {
+	font-size: 14px;
+	line-height: 17px;
+	color: #7688A4;
+}
